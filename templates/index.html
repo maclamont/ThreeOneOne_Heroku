@@ -1,0 +1,25 @@
+<!doctype html>
+<title>City 311 Calls</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'> 
+<!---<link rel=stylesheet type=text/css href='{{ url_for('static', filename='default.css')}}'> -->
+<!---<link rel=stylesheet type=text/css href='{{ url_for('static', filename='fonts.css')}}'> -->
+<div class=page>
+	<h1>City 311 Calls</h1>
+	
+	<div class=metanav>
+
+		<form id='infoform' method='post' action='index'>
+
+			<p>
+				<h2>Which city do you want to see?:</h2>
+				<p>San Francisco <input type='radio' name='city' value="SF"/></p>
+				<p>New York <input type='radio' name='city' value="NYC" checked="checked"/></p>
+			</p>
+
+			<p>
+				<input type='submit' value='Submit' />
+			</p>
+		</form>
+
+	</div>
+</div>

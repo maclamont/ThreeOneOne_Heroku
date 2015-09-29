@@ -1,0 +1,19 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City - Heat/Hot Water</h1>
+	<h2>
+	<p> This is a map of the complaints about heat and hot water in New York City in 2015.</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_HeatHotWater.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+
+	<h2>
+	<p> What is interesting though, however, is that the complaints, as you might expect, are a function of time of the year.  You get more complaints in the winter than you do in the summer.  The plot below shows these complaints as a function of month in 2015.</p>
+	</h2>
+
+	<img src="{{url_for('static', filename='NYC_HeatHowWater_month.gif')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+
+	</body>
+</div>

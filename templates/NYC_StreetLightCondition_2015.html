@@ -1,0 +1,12 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City - Street Light Conditions</h1>
+	<h2>
+	<p> This is a map of the complaints about street light conditions in New York City in 2015.  As expected, the majority of complaints are for street lights that are out.  Interestingly, there are barely any complaints about this in the middle of Manhattan.  Is this because they are fixed quickly or is it because there aren't many street lights?  After all, with the lights from businesses, they are probably not needed.</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_StreetLightConditions.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+	</body>
+</div>

@@ -1,0 +1,18 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City - Street Conditions</h1>
+	<h2>
+	<p> This is a map of the complaints about street conditions in New York City in 2015.  As expected, from people who drive in New York, by far the biggest complaint is that of potholes!  There is no distinction between boroughs, the blight of the potholes affects everyone.</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_StreetConditions.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+
+	<h2>
+	<p> As we might expect, the potholes appear at different times of the year.  Typically, the roads are so badly made that when the temperature starts to warm up and the road surface expands, then the potholes appear.   The plot below shows these complaints as a function of month in 2015, where the most prevalent month is March.</p>
+	</h2>
+
+	<img src="{{url_for('static', filename='NYC_Potholes_month.gif')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+	</body>
+</div>

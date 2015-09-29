@@ -1,0 +1,19 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City - Street Noise</h1>
+	<h2>
+	<p> This is a map of the complaints about street noise in New York City in 2015.  The complaints are roughly split evenly between noise and talking.</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_Noise_Street_Sidewalk.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+
+	<h2>
+	<p> What is interesting though, however, is that the complaints, as you might expect, are a function of time of the year.  The plot below shows these complaints as a function of month in 2015.</p>
+	</h2>
+
+	<img src="{{url_for('static', filename='NYC_StreetNoise.gif')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+
+	</body>
+</div>

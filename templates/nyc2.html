@@ -1,0 +1,46 @@
+<!doctype html>
+<title>New York City 311 Calls</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+	<h1>New York City 311 Calls</h1>
+	<div class=metanav>
+
+		<form id='infoform' method='post' action='nyc'>
+
+			<p>
+				<h2>In 2015, there have been a lot of 311 calls over a wide range of categories.  The top 10 categories are shown in the plot below.</h2>
+				<p></p>
+				<h2>To see a map of New York and the locations of where these complaints happened, please make a selection from the radio buttons below the plot.</h2>
+				
+			</p>
+
+			<img src="{{url_for('static', filename='NYC_Top10_2015.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="320">
+
+				
+				<p>Blocked Driveway <input type='radio' name='complaint' value="BD" checked="checked"/></p>
+				<p>Heat / Hot Water <input type='radio' name='complaint' value="HH"/></p>
+				<p>Illegal Parking <input type='radio' name='complaint' value="IP"/></p>
+				<p>Noise - Street/Sidewalk <input type='radio' name='complaint' value="NSS"/></p>
+				<p>Paint/Plaster <input type='radio' name='complaint' value="PP"/></p>
+				<p>Plumbing <input type='radio' name='complaint' value="PL"/></p>
+				<p>Street Condition <input type='radio' name='complaint' value="SC"/></p>
+				<p>Street Light Condition <input type='radio' name='complaint' value="SLC"/></p>
+				<p>Unsanitary Condition <input type='radio' name='complaint' value="UC"/></p>
+				<p>Water System <input type='radio' name='complaint' value="WS"/></p>
+
+				<h2>Although not in the top 10, a popular category is rodents, check the box below if you want to see the locations of complaints about rodents.</h2>
+
+				<p>Rodents! <input type='radio' name='complaint' value="RATS"/></p>
+
+				<h2>Alternatively, to make a prediction, please click on the radio button below</h2>
+
+				<p>Prediction<input type='radio' name='complaint' value="Prediction"/></p>
+
+			<p>
+
+				<input type='submit' value='Submit' />
+			</p>
+		</form>
+
+	</div>
+</div>

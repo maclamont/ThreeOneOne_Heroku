@@ -1,0 +1,12 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City</h1>
+	<h2>
+	<p> This is a plot of the distribution of the top 311 calls made in New York City in 2015!</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_top3_2015.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+	</body>
+</div>

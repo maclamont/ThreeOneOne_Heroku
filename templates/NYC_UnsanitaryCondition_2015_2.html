@@ -1,0 +1,14 @@
+<!doctype html>
+<title>New York City</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+    <body>
+	<h1>New York City - Unsanitary Conditions</h1>
+	<h2>
+	<p>
+	The parameters for your prediction returned "Unsanitary Conditions" as the most likely complaint.  The plot below shows how these complaints were distributed throughout New York City in 2015.
+	</p>
+	</h2>
+	<img src="{{url_for('static', filename='NYC_UnsanitaryConditions.png')}}" ALT="Ooops!" WIDTH="960" HEIGHT="640">
+	</body>
+</div>

@@ -1,0 +1,31 @@
+<!doctype html>
+<title>New York City 311 Calls</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
+<div class=page>
+	<h1>New York City 311 Calls Prediction</h1>
+	<div class=metanav>
+
+		<form id='infoform' method='post' action='nyc_predict'>
+
+			<p>
+				<h2>Using a Gaussian Naive Bayes model, and incorporating some weather information, we are able to predict the type of 311 call in NYC based on time, weather and location.  </h2>
+			</p>
+			<p>
+
+				<h3>Which Borough?</h3> <h3>(e.g. Manhattan = 1, Bronx = 2, Brooklyn = 3, Queens = 4 or Staten Island = 5): <input type='text' name='Borough'/></h3>
+				<h3>Which month? (numeric)</h3> <h3><input type='text' name='Month'/></h3>
+				<h3>Which hour? (0-24)</h3> <h3><input type='text' name='Hour'/></h3>
+				<h3>Which temperature? (Fahrenheit)</h3> <h3><input type='text' name='Temp'/></h3>
+				<h3>Which pressure?</h3> <h3><input type='text' name='Pressure'/></h3>
+
+			</p>
+
+
+			<p>
+
+				<input type='submit' value='Submit' />
+			</p>
+		</form>
+
+	</div>
+</div>
