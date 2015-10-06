@@ -107,15 +107,16 @@ def nyc_predict():
 		app.vars['Hour'] = request.form['Hour']
 		app.vars['Borough'] = request.form['Borough']
 		app.vars['Temp'] = request.form['Temp']
-		app.vars['Pressure'] = request.form['Pressure']
+		app.vars['Rain'] = request.form['Rain']
+		app.vars['Snow'] = request.form['Snow']
 
-		print "Month =", app.vars['Month']
-		print "Hour =", app.vars['Hour']
-		print "Borough =", app.vars['Borough']
-		print "Temp =", app.vars['Temp']
-		print "Pressure =", app.vars['Pressure']
+		#print "Month =", app.vars['Month']
+		#print "Hour =", app.vars['Hour']
+		#print "Borough =", app.vars['Borough']
+		#print "Temp =", app.vars['Temp']
+		#print "Pressure =", app.vars['Pressure']
 
-		XPred = [int(app.vars['Borough']), int(app.vars['Hour']), int(app.vars['Temp']), int(app.vars['Pressure']), int(app.vars['Hour'])]
+		XPred = [int(app.vars['Borough']), int(app.vars['Hour']), int(app.vars['Temp']), float(app.vars['Rain']), float(app.vars['Snow']), int(app.vars['Month'])]
 
 		print "XPred =", XPred
 		prediction = int(naivebayes.predict(XPred))
